@@ -1,0 +1,372 @@
+
+
+        .custom-card {
+            background: #ffffff70;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.8s;
+        }
+        .card-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1; 
+    transition: background 0.8s ease-in-out;
+    opacity: 0; 
+    }
+
+       /* .custom-card:hover .card-body::before {
+       opacity: 1; 
+       } */
+        .custom-card:hover {
+            transform: translateY(-10px);
+        }
+        .card-body {
+             transition: 0.8s;
+            text-align: center;
+            padding: 20px;
+            transition: .8s ease-in-out;
+           
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .card-title {
+            color: black;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        
+        .card-text {
+            text-wrap: nowrap;
+            color: black;
+            font-size: 1rem;
+            
+        }
+        
+        .btn-primary {
+            background-color: #8FC445;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .custom-card:hover .card-title,
+        .custom-card:hover .card-text
+        {
+          color: white; 
+        }
+        .custom-card :hover .card-icon i {
+        color: #000000; 
+        }
+        
+         .custom-card.car-card:hover .card-body {
+                
+                 background-image: url('https://blog.shipa1.daydispatch.com/public/frontend/images/slider/home-slider-1.webp');
+                 /* transition: background-image 0.8s ease-in-out; */
+                
+             }
+    
+             .custom-card.motorcycle-card:hover .card-body {
+        /* background-image: url('{{ asset('img/bike.webp') }}'); */
+    }
+    .custom-card.heavy-equip-card:hover .card-body {
+        /* background-image: url('{{ asset('frontend/images/slider/home-slider-2.webp') }}'); */
+    }
+    .custom-card.atv-utv-card:hover .card-body {
+        /* background-image: url('{{ asset('img/atv.webp') }}'); */
+    }
+    .custom-card.excavator-card:hover .card-body {
+        /* background-image: url('{{ asset('img/EXCAVATOR.webp') }}'); */
+    }
+    .custom-card.construction-card:hover .card-body {
+        /* background-image: url('{{ asset('img/construction_1.webp') }}'); */
+    }
+    .custom-card.farm-card:hover .card-body {
+        /* background-image: url('{{ asset('img/farm-equipment.webp') }}'); */
+    }
+    .custom-card.trucks-card:hover .card-body {
+        /* background-image: url('{{ asset('img/truck-.webp') }}'); */
+    }
+    .custom-card.boat-card:hover .card-body {
+        /* background-image: url('{{ asset('img/boat2.webp') }}'); */
+    }
+    .custom-card.dry-van-card:hover .card-body {
+        /* background-image: url('{{ asset('img/dry-van.webp') }}'); */
+    }
+    .custom-card.golf-cart-card:hover .card-body {
+        /* background-image: url('{{ asset('img/golf-cart.webp') }}'); */
+    }
+    .custom-card.rv-card:hover .card-body {
+        /* background-image: url('{{ asset('img/rv-.webp') }}'); */
+    }
+    .custom-card.commercial-card:hover .card-body {
+        /* background-image: url('{{ asset('img/truck-.webp') }}'); */
+    }
+    .custom-card.Reefer-card:hover .card-body {
+        /* background-image: url('{{ asset('img/ReeferTruck3.webp') }}'); */
+    }
+    .custom-card.hazmat-card:hover .card-body {
+        /* background-image: url('{{ asset('img/HAZMAT-BANNER.webp') }}'); */
+    }
+
+        
+
+
+        .tj-testimonial-section {
+            padding: 50px 0;
+            background: #f9f9f9;
+        }
+
+        .tj-testimonial2-section {
+            padding: 50px 0;
+            /* background: #f9f9f9; */
+        }
+
+        .carousel-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card .col-6 {
+            width: 50%;
+        }
+
+        .star {
+            margin-top: 10px;
+        }
+
+        .fa-star {
+            color: #f39c12;
+        }
+
+        .owl-nav button {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .owl-nav button {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .owl-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #ddd;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+
+        .owl-dot.active {
+            background: #333;
+        }
+
+
+        @keyframes custom-slides {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-80%);
+            }
+        }
+
+        .custom-logos {
+            overflow: hidden;
+            padding: 30px 0px;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .custom-logos:before,
+        .custom-logos:after {
+            position: absolute;
+            top: 0;
+            content: '';
+            width: 250px;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .custom-logos:before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+        }
+
+        .custom-logos:after {
+            right: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+        }
+
+        .custom-logo-items {
+            display: inline-block;
+            animation: 35s custom-slides infinite linear;
+        }
+
+        .custom-logos:hover .custom-logo-items {
+            animation-play-state: paused;
+        }
+
+        .custom-logo-items img {
+            height: 100px;
+        }
+
+
+        .lab-cos {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--tj-white-color);
+            margin-bottom: 10px;
+        }
+
+
+        .input-container {
+            height: 34px;
+            background: white;
+            display: flex;
+            align-items: center;
+            /* border: 1px solid #ccc; */
+            border-radius: 4px;
+            padding: 8px 0px 8px 0px;
+            width: fit-content;
+
+        }
+
+        .input-container1 {
+            height: 34px;
+            background: white;
+            display: flex;
+            align-items: center;
+            /* border: 1px solid #ccc; */
+            border-radius: 4px;
+            padding: 8px 0px 8px 0px;
+            width: fit-content;
+
+        }
+
+        .input-field {
+            width: 50px;
+            padding: 5px;
+            font-size: 14px;
+            border: none;
+            outline: none;
+        }
+
+        .input-field-1 {
+            width: 65px;
+            padding: 0px 0px 0px 10px;
+            font-size: 14px;
+            border: none;
+            outline: none;
+        }
+
+        .separator {
+            margin: 0px 0px 0px 0px;
+            font-size: 14px;
+        }
+
+        .separators {
+            margin: 0px 5px 0px 0px;
+            font-size: 14px;
+        }
+
+        .separators-w {
+            margin: 0px 5px 0px 0px;
+            font-size: 14px;
+        }
+
+        .input-container input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        .input-container input[type="number"]::-webkit-outer-spin-button,
+        .input-container input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .form-wrap {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .form-label-outside {
+            color: white;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .input-container input {
+            border: none;
+            /* border-bottom: 1px solid #ccc; */
+            padding: 5px 0px 5px 0px;
+            font-size: 14px;
+            width: 38px;
+            text-align: center;
+            /* margin-right: 5px; */
+        }
+
+        .input-container .placeholders {
+            /* color:white; */
+            position: relative;
+            right: 72px;
+            color: black;
+            display: inline-block;
+            width: auto;
+
+            padding: 0px 8px;
+            /* background: white; */
+        }
+
+        .err-style {
+            color: red;
+        }
+
+        .tj-input-form .input-form label {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--tj-white-color);
+            margin-bottom: 10px;
+        }
+
+        .error-message {
+            display: none;
+            color: red;
+        }
+
+        .error-field {
+            border: 2px solid red;
+        }
+        
